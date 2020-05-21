@@ -22,7 +22,7 @@ public class Customer {
 	private String address;
 	@Column(name="CONTACT")
 	private String contact;
-	
+
 	public Integer getUserId() {
 		return userId;
 	}
@@ -63,5 +63,5 @@ public class Customer {
 		this.contact = contact;
 	}
 
-	
+
 }

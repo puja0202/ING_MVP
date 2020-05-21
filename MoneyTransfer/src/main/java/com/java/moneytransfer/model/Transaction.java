@@ -23,8 +23,8 @@ public class Transaction {
 	private String transactionType;
 	@Column(name="AMOUNT")
 	private String amount;
-	
-	
+
+
 	public String getTxnId() {
 		return txnId;
 	}
@@ -55,5 +55,5 @@ public class Transaction {
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	
+
 }

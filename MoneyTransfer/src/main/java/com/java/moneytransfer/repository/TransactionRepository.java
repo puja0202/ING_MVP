@@ -19,17 +19,17 @@ public interface TransactionRepository extends CrudRepository<Transaction, Strin
 	public int getBalance(String userId) throws Exception;
 
 	@Query("select t from Transaction t where t.userId=:userId and t.accountId=:accountId")
-	public List<Transaction> getAllTransaction(String userId, String accountId);
+	public List<Transaction> getAllTransaction(String userId, String accountId) throws Exception;
 
-	
+
 	@Transactional
-	public default void saveTransaction(Transaction txn) {
+	public default void saveTransaction(Transaction txn) throws Exception {
 		save(txn);
 	}
 
 	@Query("select t.txnId from Transaction t where t.userId=:userId")
 	public int getTxnId(@Param("userId") String userId) throws Exception;
-	
+
 	@Query("select a.balance from Account a where a.userid=:userId and a.accountid=:accountId")
 	public String getAccountBalance(String userId, String accountId) throws Exception;
 
