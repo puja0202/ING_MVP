@@ -66,6 +66,14 @@ http://localhost:8080/account
 
 
 
+To fetch all Customers:
+
+URL: http://localhost:8080/customers
+
+To fetch accounts of a customer:
+
+URL: http://localhost:8080/1002/accounts
+
 
 User story:1
 
