@@ -16,7 +16,7 @@ public class Account {
 	private String balance;
 	@Column(name="USERID")
 	private String userid;
-	
+
 	public String getAccountid() {
 		return accountid;
 	}
@@ -35,5 +35,5 @@ public class Account {
 	public void setUserid(String userid) {
 		this.userid = userid;
 	}
-	
+
 }
