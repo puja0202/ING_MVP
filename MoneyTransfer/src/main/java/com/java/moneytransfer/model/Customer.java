@@ -12,7 +12,6 @@ public class Customer {
 
 	@Id
 	@Column(name="USERID")
-	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer userId;
 	@Column(name="USERNAME")
 	private String userName;
